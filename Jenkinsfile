@@ -3,7 +3,7 @@ pipeline {
 
     stages {
 
-        stage('Download Dependencies') {
+        stage('Compile and Package Code') {
         steps {
             sh 'mvn clean package'
         }
