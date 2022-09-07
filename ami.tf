@@ -15,11 +15,7 @@ module "ami" {
   COMPONENT = "shipping"
   APP_VERSION = var.APP_VERSION
   VPC_ID      = var.VPC_ID
-  PORT        = 8080
-  cidr_blocks = var.ALLOW_SG_CIDR
 }
 
 variable "APP_VERSION" {}
 variable "VPC_ID" {}
-variable "PORT" {}
-variable "ALLOW_SG_CIDR" {}
