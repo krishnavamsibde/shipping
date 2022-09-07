@@ -14,8 +14,8 @@ module "ami" {
   source = "github.com/krishnavamsi7616/immutable-app-ami"
   COMPONENT = "shipping"
   APP_VERSION = var.APP_VERSION
-  VPC_ID      = var.VPC_ID
+  VPC_ID      = var.vpc_id
 }
 
 variable "APP_VERSION" {}
-variable "VPC_ID" {}
+variable "vpc_id" {}
